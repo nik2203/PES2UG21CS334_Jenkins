@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     build 'PES2UG21CS334-1'
-                    sh 'g++ ./main/hello.cpp -o output'
+                    sh 'g++ ./main/not_a_file.cpp -o output'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    echo 'deploy
+                    echo 'deploy'
                 }
             }
         }
